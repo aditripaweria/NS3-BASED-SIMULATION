@@ -1,0 +1,1034 @@
+
+---
+events:
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineSystem.cmake:205 (message)"
+      - "CMakeLists.txt:9 (project)"
+    message: |
+      The system is: Darwin - 23.5.0 - arm64
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:9 (project)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+      Compiler: /Library/Developer/CommandLineTools/usr/bin/c++ 
+      Build flags: 
+      Id flags:  
+      
+      The output was:
+      1
+      ld: library 'c++' not found
+      c++: error: linker command failed with exit code 1 (use -v to see invocation)
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:9 (project)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+      Compiler: /Library/Developer/CommandLineTools/usr/bin/c++ 
+      Build flags: 
+      Id flags: -c 
+      
+      The output was:
+      0
+      
+      
+      Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CMakeCXXCompilerId.o"
+      
+      The CXX compiler identification is AppleClang, found in:
+        /Users/tanishksingh/ns-allinone-3.42/ns-3.42/cmake-cache/CMakeFiles/3.31.1/CompilerIdCXX/CMakeCXXCompilerId.o
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:9 (project)"
+    message: |
+      Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+      Compiler: /Library/Developer/CommandLineTools/usr/bin/cc 
+      Build flags: 
+      Id flags:  
+      
+      The output was:
+      1
+      ld: library 'System' not found
+      cc: error: linker command failed with exit code 1 (use -v to see invocation)
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:9 (project)"
+    message: |
+      Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+      Compiler: /Library/Developer/CommandLineTools/usr/bin/cc 
+      Build flags: 
+      Id flags: -c 
+      
+      The output was:
+      0
+      
+      
+      Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CMakeCCompilerId.o"
+      
+      The C compiler identification is AppleClang, found in:
+        /Users/tanishksingh/ns-allinone-3.42/ns-3.42/cmake-cache/CMakeFiles/3.31.1/CompilerIdC/CMakeCCompilerId.o
+      
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:74 (try_compile)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:9 (project)"
+    checks:
+      - "Detecting CXX compiler ABI info"
+    directories:
+      source: "/Users/tanishksingh/ns-allinone-3.42/ns-3.42/cmake-cache/CMakeFiles/CMakeScratch/TryCompile-DMXoQZ"
+      binary: "/Users/tanishksingh/ns-allinone-3.42/ns-3.42/cmake-cache/CMakeFiles/CMakeScratch/TryCompile-DMXoQZ"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_CXX_SCAN_FOR_MODULES: "OFF"
+      CMAKE_EXE_LINKER_FLAGS: "-L/opt/homebrew/opt/mysql-client/lib -L/opt/homebrew/opt/zstd/lib"
+      CMAKE_OSX_ARCHITECTURES: ""
+      CMAKE_OSX_DEPLOYMENT_TARGET: "14.5"
+      CMAKE_OSX_SYSROOT: "/Library/Developer/CommandLineTools/SDKs/MacOSX15.1.sdk"
+    buildResult:
+      variable: "CMAKE_CXX_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/tanishksingh/ns-allinone-3.42/ns-3.42/cmake-cache/CMakeFiles/CMakeScratch/TryCompile-DMXoQZ'
+        
+        Run Build Command(s): /opt/homebrew/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_dbfa7/fast
+        /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_dbfa7.dir/build.make CMakeFiles/cmTC_dbfa7.dir/build
+        Building CXX object CMakeFiles/cmTC_dbfa7.dir/CMakeCXXCompilerABI.cpp.o
+        /Library/Developer/CommandLineTools/usr/bin/c++   -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.1.sdk -mmacosx-version-min=14.5   -v -Wl,-v -MD -MT CMakeFiles/cmTC_dbfa7.dir/CMakeCXXCompilerABI.cpp.o -MF CMakeFiles/cmTC_dbfa7.dir/CMakeCXXCompilerABI.cpp.o.d -o CMakeFiles/cmTC_dbfa7.dir/CMakeCXXCompilerABI.cpp.o -c /opt/homebrew/share/cmake/Modules/CMakeCXXCompilerABI.cpp
+        Apple clang version 16.0.0 (clang-1600.0.26.4)
+        Target: arm64-apple-darwin23.5.0
+        Thread model: posix
+        InstalledDir: /Library/Developer/CommandLineTools/usr/bin
+        c++: warning: -Wl,-v: 'linker' input unused [-Wunused-command-line-argument]
+        ignoring nonexistent directory "/Library/Developer/CommandLineTools/usr/bin/../include/c++/v1"
+         "/Library/Developer/CommandLineTools/usr/bin/clang" -cc1 -triple arm64-apple-macosx14.5.0 -Wundef-prefix=TARGET_OS_ -Wdeprecated-objc-isa-usage -Werror=deprecated-objc-isa-usage -Werror=implicit-function-declaration -emit-obj -mrelax-all -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCXXCompilerABI.cpp -mrelocation-model pic -pic-level 2 -mframe-pointer=non-leaf -fno-strict-return -ffp-contract=on -fno-rounding-math -funwind-tables=1 -fobjc-msgsend-selector-stubs -target-sdk-version=15.1 -fvisibility-inlines-hidden-static-local-var -fno-modulemap-allow-subdirectory-search -target-cpu apple-m1 -target-feature +v8.5a -target-feature +aes -target-feature +crc -target-feature +dotprod -target-feature +fp-armv8 -target-feature +fp16fml -target-feature +lse -target-feature +ras -target-feature +rcpc -target-feature +rdm -target-feature +sha2 -target-feature +sha3 -target-feature +neon -target-feature +zcm -target-feature +zcz -target-feature +fullfp16 -target-abi darwinpcs -debugger-tuning=lldb -target-linker-version 1115.7.3 -v -fcoverage-compilation-dir=/Users/tanishksingh/ns-allinone-3.42/ns-3.42/cmake-cache/CMakeFiles/CMakeScratch/TryCompile-DMXoQZ -resource-dir /Library/Developer/CommandLineTools/usr/lib/clang/16 -dependency-file CMakeFiles/cmTC_dbfa7.dir/CMakeCXXCompilerABI.cpp.o.d -skip-unused-modulemap-deps -MT CMakeFiles/cmTC_dbfa7.dir/CMakeCXXCompilerABI.cpp.o -sys-header-deps -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.1.sdk -internal-isystem /Library/Developer/CommandLineTools/SDKs/MacOSX15.1.sdk/usr/include/c++/v1 -internal-isystem /Library/Developer/CommandLineTools/SDKs/MacOSX15.1.sdk/usr/local/include -internal-isystem /Library/Developer/CommandLineTools/usr/lib/clang/16/include -internal-externc-isystem /Library/Developer/CommandLineTools/SDKs/MacOSX15.1.sdk/usr/include -internal-externc-isystem /Library/Developer/CommandLineTools/usr/include -Wno-reorder-init-list -Wno-implicit-int-float-conversion -Wno-c99-designator -Wno-final-dtor-non-final-class -Wno-extra-semi-stmt -Wno-misleading-indentation -Wno-quoted-include-in-framework-header -Wno-implicit-fallthrough -Wno-enum-enum-conversion -Wno-enum-float-conversion -Wno-elaborated-enum-base -Wno-reserved-identifier -Wno-gnu-folding-constant -fdeprecated-macro -fdebug-compilation-dir=/Users/tanishksingh/ns-allinone-3.42/ns-3.42/cmake-cache/CMakeFiles/CMakeScratch/TryCompile-DMXoQZ -ferror-limit 19 -stack-protector 1 -fstack-check -mdarwin-stkchk-strong-link -fblocks -fencode-extended-block-signature -fregister-global-dtors-with-atexit -fgnuc-version=4.2.1 -fno-cxx-modules -fcxx-exceptions -fexceptions -fmax-type-align=16 -fcommon -clang-vendor-feature=+disableNonDependentMemberExprInCurrentInstantiation -fno-odr-hash-protocols -clang-vendor-feature=+enableAggressiveVLAFolding -clang-vendor-feature=+revert09abecef7bbf -clang-vendor-feature=+thisNoAlignAttr -clang-vendor-feature=+thisNoNullAttr -clang-vendor-feature=+disableAtImportPrivateFrameworkInImplementationError -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o CMakeFiles/cmTC_dbfa7.dir/CMakeCXXCompilerABI.cpp.o -x c++ /opt/homebrew/share/cmake/Modules/CMakeCXXCompilerABI.cpp
+        clang -cc1 version 16.0.0 (clang-1600.0.26.4) default target arm64-apple-darwin23.5.0
+        ignoring nonexistent directory "/Library/Developer/CommandLineTools/SDKs/MacOSX15.1.sdk/usr/local/include"
+        ignoring nonexistent directory "/Library/Developer/CommandLineTools/SDKs/MacOSX15.1.sdk/Library/Frameworks"
+        #include "..." search starts here:
+        #include <...> search starts here:
+         /Library/Developer/CommandLineTools/SDKs/MacOSX15.1.sdk/usr/include/c++/v1
+         /Library/Developer/CommandLineTools/usr/lib/clang/16/include
+         /Library/Developer/CommandLineTools/SDKs/MacOSX15.1.sdk/usr/include
+         /Library/Developer/CommandLineTools/usr/include
+         /Library/Developer/CommandLineTools/SDKs/MacOSX15.1.sdk/System/Library/Frameworks (framework directory)
+        End of search list.
+        Linking CXX executable cmTC_dbfa7
+        /opt/homebrew/bin/cmake -E cmake_link_script CMakeFiles/cmTC_dbfa7.dir/link.txt --verbose=1
+        Apple clang version 16.0.0 (clang-1600.0.26.4)
+        Target: arm64-apple-darwin23.5.0
+        Thread model: posix
+        InstalledDir: /Library/Developer/CommandLineTools/usr/bin
+         "/Library/Developer/CommandLineTools/usr/bin/ld" -demangle -lto_library /Library/Developer/CommandLineTools/usr/lib/libLTO.dylib -dynamic -arch arm64 -platform_version macos 14.5.0 15.1 -syslibroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.1.sdk -mllvm -enable-linkonceodr-outlining -o cmTC_dbfa7 -L/opt/homebrew/opt/mysql-client/lib -L/opt/homebrew/opt/zstd/lib -search_paths_first -headerpad_max_install_names -v CMakeFiles/cmTC_dbfa7.dir/CMakeCXXCompilerABI.cpp.o -lc++ -lSystem /Library/Developer/CommandLineTools/usr/lib/clang/16/lib/darwin/libclang_rt.osx.a
+        @(#)PROGRAM:ld PROJECT:ld-1115.7.3
+        BUILD 07:38:57 Oct  4 2024
+        configured to support archs: armv6 armv7 armv7s arm64 arm64e arm64_32 i386 x86_64 x86_64h armv6m armv7k armv7m armv7em
+        will use ld-classic for: armv6 armv7 armv7s i386 armv6m armv7k armv7m armv7em
+        LTO support using: LLVM version 16.0.0 (static support for 29, runtime is 29)
+        TAPI support using: Apple TAPI version 16.0.0 (tapi-1600.0.11.8)
+        Library search paths:
+        	/opt/homebrew/opt/mysql-client/lib
+        	/opt/homebrew/opt/zstd/lib
+        	/Library/Developer/CommandLineTools/SDKs/MacOSX15.1.sdk/usr/lib
+        	/Library/Developer/CommandLineTools/SDKs/MacOSX15.1.sdk/usr/lib/swift
+        Framework search paths:
+        	/Library/Developer/CommandLineTools/SDKs/MacOSX15.1.sdk/System/Library/Frameworks
+        /Library/Developer/CommandLineTools/usr/bin/c++  -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.1.sdk -mmacosx-version-min=14.5 -Wl,-search_paths_first -Wl,-headerpad_max_install_names -L/opt/homebrew/opt/mysql-client/lib -L/opt/homebrew/opt/zstd/lib -v -Wl,-v CMakeFiles/cmTC_dbfa7.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_dbfa7
+        
+      exitCode: 0
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:113 (message)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:9 (project)"
+    message: |
+      Effective list of requested architectures (possibly empty)  : ""
+      Effective list of architectures found in the ABI info binary: "arm64"
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:182 (message)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:9 (project)"
+    message: |
+      Parsed CXX implicit include dir info: rv=done
+        found start of include info
+        found start of implicit include info
+          add: [/Library/Developer/CommandLineTools/SDKs/MacOSX15.1.sdk/usr/include/c++/v1]
+          add: [/Library/Developer/CommandLineTools/usr/lib/clang/16/include]
+          add: [/Library/Developer/CommandLineTools/SDKs/MacOSX15.1.sdk/usr/include]
+          add: [/Library/Developer/CommandLineTools/usr/include]
+        end of search list found
+        collapse include dir [/Library/Developer/CommandLineTools/SDKs/MacOSX15.1.sdk/usr/include/c++/v1] ==> [/Library/Developer/CommandLineTools/SDKs/MacOSX15.1.sdk/usr/include/c++/v1]
+        collapse include dir [/Library/Developer/CommandLineTools/usr/lib/clang/16/include] ==> [/Library/Developer/CommandLineTools/usr/lib/clang/16/include]
+        collapse include dir [/Library/Developer/CommandLineTools/SDKs/MacOSX15.1.sdk/usr/include] ==> [/Library/Developer/CommandLineTools/SDKs/MacOSX15.1.sdk/usr/include]
+        collapse include dir [/Library/Developer/CommandLineTools/usr/include] ==> [/Library/Developer/CommandLineTools/usr/include]
+        implicit include dirs: [/Library/Developer/CommandLineTools/SDKs/MacOSX15.1.sdk/usr/include/c++/v1;/Library/Developer/CommandLineTools/usr/lib/clang/16/include;/Library/Developer/CommandLineTools/SDKs/MacOSX15.1.sdk/usr/include;/Library/Developer/CommandLineTools/usr/include]
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:218 (message)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:9 (project)"
+    message: |
+      Parsed CXX implicit link information:
+        link line regex: [^( *|.*[/\\])(ld[0-9]*(\\.[a-z]+)?|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
+        linker tool regex: [^[ 	]*(->|")?[ 	]*(([^"]*[/\\])?(ld[0-9]*(\\.[a-z]+)?))("|,| |$)]
+        ignore line: [Change Dir: '/Users/tanishksingh/ns-allinone-3.42/ns-3.42/cmake-cache/CMakeFiles/CMakeScratch/TryCompile-DMXoQZ']
+        ignore line: []
+        ignore line: [Run Build Command(s): /opt/homebrew/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_dbfa7/fast]
+        ignore line: [/Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_dbfa7.dir/build.make CMakeFiles/cmTC_dbfa7.dir/build]
+        ignore line: [Building CXX object CMakeFiles/cmTC_dbfa7.dir/CMakeCXXCompilerABI.cpp.o]
+        ignore line: [/Library/Developer/CommandLineTools/usr/bin/c++   -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.1.sdk -mmacosx-version-min=14.5   -v -Wl -v -MD -MT CMakeFiles/cmTC_dbfa7.dir/CMakeCXXCompilerABI.cpp.o -MF CMakeFiles/cmTC_dbfa7.dir/CMakeCXXCompilerABI.cpp.o.d -o CMakeFiles/cmTC_dbfa7.dir/CMakeCXXCompilerABI.cpp.o -c /opt/homebrew/share/cmake/Modules/CMakeCXXCompilerABI.cpp]
+        ignore line: [Apple clang version 16.0.0 (clang-1600.0.26.4)]
+        ignore line: [Target: arm64-apple-darwin23.5.0]
+        ignore line: [Thread model: posix]
+        ignore line: [InstalledDir: /Library/Developer/CommandLineTools/usr/bin]
+        ignore line: [c++: warning: -Wl -v: 'linker' input unused [-Wunused-command-line-argument]]
+        ignore line: [ignoring nonexistent directory "/Library/Developer/CommandLineTools/usr/bin/../include/c++/v1"]
+        ignore line: [ "/Library/Developer/CommandLineTools/usr/bin/clang" -cc1 -triple arm64-apple-macosx14.5.0 -Wundef-prefix=TARGET_OS_ -Wdeprecated-objc-isa-usage -Werror=deprecated-objc-isa-usage -Werror=implicit-function-declaration -emit-obj -mrelax-all -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCXXCompilerABI.cpp -mrelocation-model pic -pic-level 2 -mframe-pointer=non-leaf -fno-strict-return -ffp-contract=on -fno-rounding-math -funwind-tables=1 -fobjc-msgsend-selector-stubs -target-sdk-version=15.1 -fvisibility-inlines-hidden-static-local-var -fno-modulemap-allow-subdirectory-search -target-cpu apple-m1 -target-feature +v8.5a -target-feature +aes -target-feature +crc -target-feature +dotprod -target-feature +fp-armv8 -target-feature +fp16fml -target-feature +lse -target-feature +ras -target-feature +rcpc -target-feature +rdm -target-feature +sha2 -target-feature +sha3 -target-feature +neon -target-feature +zcm -target-feature +zcz -target-feature +fullfp16 -target-abi darwinpcs -debugger-tuning=lldb -target-linker-version 1115.7.3 -v -fcoverage-compilation-dir=/Users/tanishksingh/ns-allinone-3.42/ns-3.42/cmake-cache/CMakeFiles/CMakeScratch/TryCompile-DMXoQZ -resource-dir /Library/Developer/CommandLineTools/usr/lib/clang/16 -dependency-file CMakeFiles/cmTC_dbfa7.dir/CMakeCXXCompilerABI.cpp.o.d -skip-unused-modulemap-deps -MT CMakeFiles/cmTC_dbfa7.dir/CMakeCXXCompilerABI.cpp.o -sys-header-deps -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.1.sdk -internal-isystem /Library/Developer/CommandLineTools/SDKs/MacOSX15.1.sdk/usr/include/c++/v1 -internal-isystem /Library/Developer/CommandLineTools/SDKs/MacOSX15.1.sdk/usr/local/include -internal-isystem /Library/Developer/CommandLineTools/usr/lib/clang/16/include -internal-externc-isystem /Library/Developer/CommandLineTools/SDKs/MacOSX15.1.sdk/usr/include -internal-externc-isystem /Library/Developer/CommandLineTools/usr/include -Wno-reorder-init-list -Wno-implicit-int-float-conversion -Wno-c99-designator -Wno-final-dtor-non-final-class -Wno-extra-semi-stmt -Wno-misleading-indentation -Wno-quoted-include-in-framework-header -Wno-implicit-fallthrough -Wno-enum-enum-conversion -Wno-enum-float-conversion -Wno-elaborated-enum-base -Wno-reserved-identifier -Wno-gnu-folding-constant -fdeprecated-macro -fdebug-compilation-dir=/Users/tanishksingh/ns-allinone-3.42/ns-3.42/cmake-cache/CMakeFiles/CMakeScratch/TryCompile-DMXoQZ -ferror-limit 19 -stack-protector 1 -fstack-check -mdarwin-stkchk-strong-link -fblocks -fencode-extended-block-signature -fregister-global-dtors-with-atexit -fgnuc-version=4.2.1 -fno-cxx-modules -fcxx-exceptions -fexceptions -fmax-type-align=16 -fcommon -clang-vendor-feature=+disableNonDependentMemberExprInCurrentInstantiation -fno-odr-hash-protocols -clang-vendor-feature=+enableAggressiveVLAFolding -clang-vendor-feature=+revert09abecef7bbf -clang-vendor-feature=+thisNoAlignAttr -clang-vendor-feature=+thisNoNullAttr -clang-vendor-feature=+disableAtImportPrivateFrameworkInImplementationError -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o CMakeFiles/cmTC_dbfa7.dir/CMakeCXXCompilerABI.cpp.o -x c++ /opt/homebrew/share/cmake/Modules/CMakeCXXCompilerABI.cpp]
+        ignore line: [clang -cc1 version 16.0.0 (clang-1600.0.26.4) default target arm64-apple-darwin23.5.0]
+        ignore line: [ignoring nonexistent directory "/Library/Developer/CommandLineTools/SDKs/MacOSX15.1.sdk/usr/local/include"]
+        ignore line: [ignoring nonexistent directory "/Library/Developer/CommandLineTools/SDKs/MacOSX15.1.sdk/Library/Frameworks"]
+        ignore line: [#include "..." search starts here:]
+        ignore line: [#include <...> search starts here:]
+        ignore line: [ /Library/Developer/CommandLineTools/SDKs/MacOSX15.1.sdk/usr/include/c++/v1]
+        ignore line: [ /Library/Developer/CommandLineTools/usr/lib/clang/16/include]
+        ignore line: [ /Library/Developer/CommandLineTools/SDKs/MacOSX15.1.sdk/usr/include]
+        ignore line: [ /Library/Developer/CommandLineTools/usr/include]
+        ignore line: [ /Library/Developer/CommandLineTools/SDKs/MacOSX15.1.sdk/System/Library/Frameworks (framework directory)]
+        ignore line: [End of search list.]
+        ignore line: [Linking CXX executable cmTC_dbfa7]
+        ignore line: [/opt/homebrew/bin/cmake -E cmake_link_script CMakeFiles/cmTC_dbfa7.dir/link.txt --verbose=1]
+        ignore line: [Apple clang version 16.0.0 (clang-1600.0.26.4)]
+        ignore line: [Target: arm64-apple-darwin23.5.0]
+        ignore line: [Thread model: posix]
+        ignore line: [InstalledDir: /Library/Developer/CommandLineTools/usr/bin]
+        link line: [ "/Library/Developer/CommandLineTools/usr/bin/ld" -demangle -lto_library /Library/Developer/CommandLineTools/usr/lib/libLTO.dylib -dynamic -arch arm64 -platform_version macos 14.5.0 15.1 -syslibroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.1.sdk -mllvm -enable-linkonceodr-outlining -o cmTC_dbfa7 -L/opt/homebrew/opt/mysql-client/lib -L/opt/homebrew/opt/zstd/lib -search_paths_first -headerpad_max_install_names -v CMakeFiles/cmTC_dbfa7.dir/CMakeCXXCompilerABI.cpp.o -lc++ -lSystem /Library/Developer/CommandLineTools/usr/lib/clang/16/lib/darwin/libclang_rt.osx.a]
+          arg [/Library/Developer/CommandLineTools/usr/bin/ld] ==> ignore
+          arg [-demangle] ==> ignore
+          arg [-lto_library] ==> ignore, skip following value
+          arg [/Library/Developer/CommandLineTools/usr/lib/libLTO.dylib] ==> skip value of -lto_library
+          arg [-dynamic] ==> ignore
+          arg [-arch] ==> ignore
+          arg [arm64] ==> ignore
+          arg [-platform_version] ==> ignore
+          arg [macos] ==> ignore
+          arg [14.5.0] ==> ignore
+          arg [15.1] ==> ignore
+          arg [-syslibroot] ==> ignore
+          arg [/Library/Developer/CommandLineTools/SDKs/MacOSX15.1.sdk] ==> ignore
+          arg [-mllvm] ==> ignore
+          arg [-enable-linkonceodr-outlining] ==> ignore
+          arg [-o] ==> ignore
+          arg [cmTC_dbfa7] ==> ignore
+          arg [-L/opt/homebrew/opt/mysql-client/lib] ==> dir [/opt/homebrew/opt/mysql-client/lib]
+          arg [-L/opt/homebrew/opt/zstd/lib] ==> dir [/opt/homebrew/opt/zstd/lib]
+          arg [-search_paths_first] ==> ignore
+          arg [-headerpad_max_install_names] ==> ignore
+          arg [-v] ==> ignore
+          arg [CMakeFiles/cmTC_dbfa7.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
+          arg [-lc++] ==> lib [c++]
+          arg [-lSystem] ==> lib [System]
+          arg [/Library/Developer/CommandLineTools/usr/lib/clang/16/lib/darwin/libclang_rt.osx.a] ==> lib [/Library/Developer/CommandLineTools/usr/lib/clang/16/lib/darwin/libclang_rt.osx.a]
+        linker tool for 'CXX': /Library/Developer/CommandLineTools/usr/bin/ld
+        Library search paths: [;/opt/homebrew/opt/mysql-client/lib;/opt/homebrew/opt/zstd/lib;/Library/Developer/CommandLineTools/SDKs/MacOSX15.1.sdk/usr/lib;/Library/Developer/CommandLineTools/SDKs/MacOSX15.1.sdk/usr/lib/swift]
+        Framework search paths: [;/Library/Developer/CommandLineTools/SDKs/MacOSX15.1.sdk/System/Library/Frameworks]
+        remove lib [System]
+        remove lib [/Library/Developer/CommandLineTools/usr/lib/clang/16/lib/darwin/libclang_rt.osx.a]
+        collapse library dir [/opt/homebrew/opt/mysql-client/lib] ==> [/opt/homebrew/opt/mysql-client/lib]
+        collapse library dir [/opt/homebrew/opt/zstd/lib] ==> [/opt/homebrew/opt/zstd/lib]
+        collapse library dir [/opt/homebrew/opt/mysql-client/lib] ==> [/opt/homebrew/opt/mysql-client/lib]
+        collapse library dir [/opt/homebrew/opt/zstd/lib] ==> [/opt/homebrew/opt/zstd/lib]
+        collapse library dir [/Library/Developer/CommandLineTools/SDKs/MacOSX15.1.sdk/usr/lib] ==> [/Library/Developer/CommandLineTools/SDKs/MacOSX15.1.sdk/usr/lib]
+        collapse library dir [/Library/Developer/CommandLineTools/SDKs/MacOSX15.1.sdk/usr/lib/swift] ==> [/Library/Developer/CommandLineTools/SDKs/MacOSX15.1.sdk/usr/lib/swift]
+        collapse framework dir [/Library/Developer/CommandLineTools/SDKs/MacOSX15.1.sdk/System/Library/Frameworks] ==> [/Library/Developer/CommandLineTools/SDKs/MacOSX15.1.sdk/System/Library/Frameworks]
+        implicit libs: [c++]
+        implicit objs: []
+        implicit dirs: [/opt/homebrew/opt/mysql-client/lib;/opt/homebrew/opt/zstd/lib;/Library/Developer/CommandLineTools/SDKs/MacOSX15.1.sdk/usr/lib;/Library/Developer/CommandLineTools/SDKs/MacOSX15.1.sdk/usr/lib/swift]
+        implicit fwks: [/Library/Developer/CommandLineTools/SDKs/MacOSX15.1.sdk/System/Library/Frameworks]
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/opt/homebrew/share/cmake/Modules/Internal/CMakeDetermineLinkerId.cmake:40 (message)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:255 (cmake_determine_linker_id)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:9 (project)"
+    message: |
+      Running the CXX compiler's linker: "/Library/Developer/CommandLineTools/usr/bin/ld" "-v"
+      @(#)PROGRAM:ld PROJECT:ld-1115.7.3
+      BUILD 07:38:57 Oct  4 2024
+      configured to support archs: armv6 armv7 armv7s arm64 arm64e arm64_32 i386 x86_64 x86_64h armv6m armv7k armv7m armv7em
+      will use ld-classic for: armv6 armv7 armv7s i386 armv6m armv7k armv7m armv7em
+      LTO support using: LLVM version 16.0.0 (static support for 29, runtime is 29)
+      TAPI support using: Apple TAPI version 16.0.0 (tapi-1600.0.11.8)
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:74 (try_compile)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:9 (project)"
+    checks:
+      - "Detecting C compiler ABI info"
+    directories:
+      source: "/Users/tanishksingh/ns-allinone-3.42/ns-3.42/cmake-cache/CMakeFiles/CMakeScratch/TryCompile-ufWs07"
+      binary: "/Users/tanishksingh/ns-allinone-3.42/ns-3.42/cmake-cache/CMakeFiles/CMakeScratch/TryCompile-ufWs07"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: "-L/opt/homebrew/opt/mysql-client/lib -L/opt/homebrew/opt/zstd/lib"
+      CMAKE_OSX_ARCHITECTURES: ""
+      CMAKE_OSX_DEPLOYMENT_TARGET: "14.5"
+      CMAKE_OSX_SYSROOT: "/Library/Developer/CommandLineTools/SDKs/MacOSX15.1.sdk"
+    buildResult:
+      variable: "CMAKE_C_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/tanishksingh/ns-allinone-3.42/ns-3.42/cmake-cache/CMakeFiles/CMakeScratch/TryCompile-ufWs07'
+        
+        Run Build Command(s): /opt/homebrew/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_54098/fast
+        /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_54098.dir/build.make CMakeFiles/cmTC_54098.dir/build
+        Building C object CMakeFiles/cmTC_54098.dir/CMakeCCompilerABI.c.o
+        /Library/Developer/CommandLineTools/usr/bin/cc   -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.1.sdk -mmacosx-version-min=14.5   -v -Wl,-v -MD -MT CMakeFiles/cmTC_54098.dir/CMakeCCompilerABI.c.o -MF CMakeFiles/cmTC_54098.dir/CMakeCCompilerABI.c.o.d -o CMakeFiles/cmTC_54098.dir/CMakeCCompilerABI.c.o -c /opt/homebrew/share/cmake/Modules/CMakeCCompilerABI.c
+        Apple clang version 16.0.0 (clang-1600.0.26.4)
+        Target: arm64-apple-darwin23.5.0
+        Thread model: posix
+        InstalledDir: /Library/Developer/CommandLineTools/usr/bin
+        cc: warning: -Wl,-v: 'linker' input unused [-Wunused-command-line-argument]
+         "/Library/Developer/CommandLineTools/usr/bin/clang" -cc1 -triple arm64-apple-macosx14.5.0 -Wundef-prefix=TARGET_OS_ -Wdeprecated-objc-isa-usage -Werror=deprecated-objc-isa-usage -Werror=implicit-function-declaration -emit-obj -mrelax-all -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCCompilerABI.c -mrelocation-model pic -pic-level 2 -mframe-pointer=non-leaf -fno-strict-return -ffp-contract=on -fno-rounding-math -funwind-tables=1 -fobjc-msgsend-selector-stubs -target-sdk-version=15.1 -fvisibility-inlines-hidden-static-local-var -fno-modulemap-allow-subdirectory-search -target-cpu apple-m1 -target-feature +v8.5a -target-feature +aes -target-feature +crc -target-feature +dotprod -target-feature +fp-armv8 -target-feature +fp16fml -target-feature +lse -target-feature +ras -target-feature +rcpc -target-feature +rdm -target-feature +sha2 -target-feature +sha3 -target-feature +neon -target-feature +zcm -target-feature +zcz -target-feature +fullfp16 -target-abi darwinpcs -debugger-tuning=lldb -target-linker-version 1115.7.3 -v -fcoverage-compilation-dir=/Users/tanishksingh/ns-allinone-3.42/ns-3.42/cmake-cache/CMakeFiles/CMakeScratch/TryCompile-ufWs07 -resource-dir /Library/Developer/CommandLineTools/usr/lib/clang/16 -dependency-file CMakeFiles/cmTC_54098.dir/CMakeCCompilerABI.c.o.d -skip-unused-modulemap-deps -MT CMakeFiles/cmTC_54098.dir/CMakeCCompilerABI.c.o -sys-header-deps -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.1.sdk -internal-isystem /Library/Developer/CommandLineTools/SDKs/MacOSX15.1.sdk/usr/local/include -internal-isystem /Library/Developer/CommandLineTools/usr/lib/clang/16/include -internal-externc-isystem /Library/Developer/CommandLineTools/SDKs/MacOSX15.1.sdk/usr/include -internal-externc-isystem /Library/Developer/CommandLineTools/usr/include -Wno-reorder-init-list -Wno-implicit-int-float-conversion -Wno-c99-designator -Wno-final-dtor-non-final-class -Wno-extra-semi-stmt -Wno-misleading-indentation -Wno-quoted-include-in-framework-header -Wno-implicit-fallthrough -Wno-enum-enum-conversion -Wno-enum-float-conversion -Wno-elaborated-enum-base -Wno-reserved-identifier -Wno-gnu-folding-constant -fdebug-compilation-dir=/Users/tanishksingh/ns-allinone-3.42/ns-3.42/cmake-cache/CMakeFiles/CMakeScratch/TryCompile-ufWs07 -ferror-limit 19 -stack-protector 1 -fstack-check -mdarwin-stkchk-strong-link -fblocks -fencode-extended-block-signature -fregister-global-dtors-with-atexit -fgnuc-version=4.2.1 -fmax-type-align=16 -fcommon -clang-vendor-feature=+disableNonDependentMemberExprInCurrentInstantiation -fno-odr-hash-protocols -clang-vendor-feature=+enableAggressiveVLAFolding -clang-vendor-feature=+revert09abecef7bbf -clang-vendor-feature=+thisNoAlignAttr -clang-vendor-feature=+thisNoNullAttr -clang-vendor-feature=+disableAtImportPrivateFrameworkInImplementationError -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o CMakeFiles/cmTC_54098.dir/CMakeCCompilerABI.c.o -x c /opt/homebrew/share/cmake/Modules/CMakeCCompilerABI.c
+        clang -cc1 version 16.0.0 (clang-1600.0.26.4) default target arm64-apple-darwin23.5.0
+        ignoring nonexistent directory "/Library/Developer/CommandLineTools/SDKs/MacOSX15.1.sdk/usr/local/include"
+        ignoring nonexistent directory "/Library/Developer/CommandLineTools/SDKs/MacOSX15.1.sdk/Library/Frameworks"
+        #include "..." search starts here:
+        #include <...> search starts here:
+         /Library/Developer/CommandLineTools/usr/lib/clang/16/include
+         /Library/Developer/CommandLineTools/SDKs/MacOSX15.1.sdk/usr/include
+         /Library/Developer/CommandLineTools/usr/include
+         /Library/Developer/CommandLineTools/SDKs/MacOSX15.1.sdk/System/Library/Frameworks (framework directory)
+        End of search list.
+        Linking C executable cmTC_54098
+        /opt/homebrew/bin/cmake -E cmake_link_script CMakeFiles/cmTC_54098.dir/link.txt --verbose=1
+        Apple clang version 16.0.0 (clang-1600.0.26.4)
+        Target: arm64-apple-darwin23.5.0
+        Thread model: posix
+        InstalledDir: /Library/Developer/CommandLineTools/usr/bin
+         "/Library/Developer/CommandLineTools/usr/bin/ld" -demangle -lto_library /Library/Developer/CommandLineTools/usr/lib/libLTO.dylib -dynamic -arch arm64 -platform_version macos 14.5.0 15.1 -syslibroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.1.sdk -mllvm -enable-linkonceodr-outlining -o cmTC_54098 -L/opt/homebrew/opt/mysql-client/lib -L/opt/homebrew/opt/zstd/lib -search_paths_first -headerpad_max_install_names -v CMakeFiles/cmTC_54098.dir/CMakeCCompilerABI.c.o -lSystem /Library/Developer/CommandLineTools/usr/lib/clang/16/lib/darwin/libclang_rt.osx.a
+        @(#)PROGRAM:ld PROJECT:ld-1115.7.3
+        BUILD 07:38:57 Oct  4 2024
+        configured to support archs: armv6 armv7 armv7s arm64 arm64e arm64_32 i386 x86_64 x86_64h armv6m armv7k armv7m armv7em
+        will use ld-classic for: armv6 armv7 armv7s i386 armv6m armv7k armv7m armv7em
+        LTO support using: LLVM version 16.0.0 (static support for 29, runtime is 29)
+        TAPI support using: Apple TAPI version 16.0.0 (tapi-1600.0.11.8)
+        Library search paths:
+        	/opt/homebrew/opt/mysql-client/lib
+        	/opt/homebrew/opt/zstd/lib
+        	/Library/Developer/CommandLineTools/SDKs/MacOSX15.1.sdk/usr/lib
+        	/Library/Developer/CommandLineTools/SDKs/MacOSX15.1.sdk/usr/lib/swift
+        Framework search paths:
+        	/Library/Developer/CommandLineTools/SDKs/MacOSX15.1.sdk/System/Library/Frameworks
+        /Library/Developer/CommandLineTools/usr/bin/cc  -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.1.sdk -mmacosx-version-min=14.5 -Wl,-search_paths_first -Wl,-headerpad_max_install_names -L/opt/homebrew/opt/mysql-client/lib -L/opt/homebrew/opt/zstd/lib -v -Wl,-v CMakeFiles/cmTC_54098.dir/CMakeCCompilerABI.c.o -o cmTC_54098
+        
+      exitCode: 0
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:113 (message)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:9 (project)"
+    message: |
+      Effective list of requested architectures (possibly empty)  : ""
+      Effective list of architectures found in the ABI info binary: "arm64"
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:182 (message)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:9 (project)"
+    message: |
+      Parsed C implicit include dir info: rv=done
+        found start of include info
+        found start of implicit include info
+          add: [/Library/Developer/CommandLineTools/usr/lib/clang/16/include]
+          add: [/Library/Developer/CommandLineTools/SDKs/MacOSX15.1.sdk/usr/include]
+          add: [/Library/Developer/CommandLineTools/usr/include]
+        end of search list found
+        collapse include dir [/Library/Developer/CommandLineTools/usr/lib/clang/16/include] ==> [/Library/Developer/CommandLineTools/usr/lib/clang/16/include]
+        collapse include dir [/Library/Developer/CommandLineTools/SDKs/MacOSX15.1.sdk/usr/include] ==> [/Library/Developer/CommandLineTools/SDKs/MacOSX15.1.sdk/usr/include]
+        collapse include dir [/Library/Developer/CommandLineTools/usr/include] ==> [/Library/Developer/CommandLineTools/usr/include]
+        implicit include dirs: [/Library/Developer/CommandLineTools/usr/lib/clang/16/include;/Library/Developer/CommandLineTools/SDKs/MacOSX15.1.sdk/usr/include;/Library/Developer/CommandLineTools/usr/include]
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:218 (message)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:9 (project)"
+    message: |
+      Parsed C implicit link information:
+        link line regex: [^( *|.*[/\\])(ld[0-9]*(\\.[a-z]+)?|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
+        linker tool regex: [^[ 	]*(->|")?[ 	]*(([^"]*[/\\])?(ld[0-9]*(\\.[a-z]+)?))("|,| |$)]
+        ignore line: [Change Dir: '/Users/tanishksingh/ns-allinone-3.42/ns-3.42/cmake-cache/CMakeFiles/CMakeScratch/TryCompile-ufWs07']
+        ignore line: []
+        ignore line: [Run Build Command(s): /opt/homebrew/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_54098/fast]
+        ignore line: [/Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_54098.dir/build.make CMakeFiles/cmTC_54098.dir/build]
+        ignore line: [Building C object CMakeFiles/cmTC_54098.dir/CMakeCCompilerABI.c.o]
+        ignore line: [/Library/Developer/CommandLineTools/usr/bin/cc   -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.1.sdk -mmacosx-version-min=14.5   -v -Wl -v -MD -MT CMakeFiles/cmTC_54098.dir/CMakeCCompilerABI.c.o -MF CMakeFiles/cmTC_54098.dir/CMakeCCompilerABI.c.o.d -o CMakeFiles/cmTC_54098.dir/CMakeCCompilerABI.c.o -c /opt/homebrew/share/cmake/Modules/CMakeCCompilerABI.c]
+        ignore line: [Apple clang version 16.0.0 (clang-1600.0.26.4)]
+        ignore line: [Target: arm64-apple-darwin23.5.0]
+        ignore line: [Thread model: posix]
+        ignore line: [InstalledDir: /Library/Developer/CommandLineTools/usr/bin]
+        ignore line: [cc: warning: -Wl -v: 'linker' input unused [-Wunused-command-line-argument]]
+        ignore line: [ "/Library/Developer/CommandLineTools/usr/bin/clang" -cc1 -triple arm64-apple-macosx14.5.0 -Wundef-prefix=TARGET_OS_ -Wdeprecated-objc-isa-usage -Werror=deprecated-objc-isa-usage -Werror=implicit-function-declaration -emit-obj -mrelax-all -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCCompilerABI.c -mrelocation-model pic -pic-level 2 -mframe-pointer=non-leaf -fno-strict-return -ffp-contract=on -fno-rounding-math -funwind-tables=1 -fobjc-msgsend-selector-stubs -target-sdk-version=15.1 -fvisibility-inlines-hidden-static-local-var -fno-modulemap-allow-subdirectory-search -target-cpu apple-m1 -target-feature +v8.5a -target-feature +aes -target-feature +crc -target-feature +dotprod -target-feature +fp-armv8 -target-feature +fp16fml -target-feature +lse -target-feature +ras -target-feature +rcpc -target-feature +rdm -target-feature +sha2 -target-feature +sha3 -target-feature +neon -target-feature +zcm -target-feature +zcz -target-feature +fullfp16 -target-abi darwinpcs -debugger-tuning=lldb -target-linker-version 1115.7.3 -v -fcoverage-compilation-dir=/Users/tanishksingh/ns-allinone-3.42/ns-3.42/cmake-cache/CMakeFiles/CMakeScratch/TryCompile-ufWs07 -resource-dir /Library/Developer/CommandLineTools/usr/lib/clang/16 -dependency-file CMakeFiles/cmTC_54098.dir/CMakeCCompilerABI.c.o.d -skip-unused-modulemap-deps -MT CMakeFiles/cmTC_54098.dir/CMakeCCompilerABI.c.o -sys-header-deps -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.1.sdk -internal-isystem /Library/Developer/CommandLineTools/SDKs/MacOSX15.1.sdk/usr/local/include -internal-isystem /Library/Developer/CommandLineTools/usr/lib/clang/16/include -internal-externc-isystem /Library/Developer/CommandLineTools/SDKs/MacOSX15.1.sdk/usr/include -internal-externc-isystem /Library/Developer/CommandLineTools/usr/include -Wno-reorder-init-list -Wno-implicit-int-float-conversion -Wno-c99-designator -Wno-final-dtor-non-final-class -Wno-extra-semi-stmt -Wno-misleading-indentation -Wno-quoted-include-in-framework-header -Wno-implicit-fallthrough -Wno-enum-enum-conversion -Wno-enum-float-conversion -Wno-elaborated-enum-base -Wno-reserved-identifier -Wno-gnu-folding-constant -fdebug-compilation-dir=/Users/tanishksingh/ns-allinone-3.42/ns-3.42/cmake-cache/CMakeFiles/CMakeScratch/TryCompile-ufWs07 -ferror-limit 19 -stack-protector 1 -fstack-check -mdarwin-stkchk-strong-link -fblocks -fencode-extended-block-signature -fregister-global-dtors-with-atexit -fgnuc-version=4.2.1 -fmax-type-align=16 -fcommon -clang-vendor-feature=+disableNonDependentMemberExprInCurrentInstantiation -fno-odr-hash-protocols -clang-vendor-feature=+enableAggressiveVLAFolding -clang-vendor-feature=+revert09abecef7bbf -clang-vendor-feature=+thisNoAlignAttr -clang-vendor-feature=+thisNoNullAttr -clang-vendor-feature=+disableAtImportPrivateFrameworkInImplementationError -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o CMakeFiles/cmTC_54098.dir/CMakeCCompilerABI.c.o -x c /opt/homebrew/share/cmake/Modules/CMakeCCompilerABI.c]
+        ignore line: [clang -cc1 version 16.0.0 (clang-1600.0.26.4) default target arm64-apple-darwin23.5.0]
+        ignore line: [ignoring nonexistent directory "/Library/Developer/CommandLineTools/SDKs/MacOSX15.1.sdk/usr/local/include"]
+        ignore line: [ignoring nonexistent directory "/Library/Developer/CommandLineTools/SDKs/MacOSX15.1.sdk/Library/Frameworks"]
+        ignore line: [#include "..." search starts here:]
+        ignore line: [#include <...> search starts here:]
+        ignore line: [ /Library/Developer/CommandLineTools/usr/lib/clang/16/include]
+        ignore line: [ /Library/Developer/CommandLineTools/SDKs/MacOSX15.1.sdk/usr/include]
+        ignore line: [ /Library/Developer/CommandLineTools/usr/include]
+        ignore line: [ /Library/Developer/CommandLineTools/SDKs/MacOSX15.1.sdk/System/Library/Frameworks (framework directory)]
+        ignore line: [End of search list.]
+        ignore line: [Linking C executable cmTC_54098]
+        ignore line: [/opt/homebrew/bin/cmake -E cmake_link_script CMakeFiles/cmTC_54098.dir/link.txt --verbose=1]
+        ignore line: [Apple clang version 16.0.0 (clang-1600.0.26.4)]
+        ignore line: [Target: arm64-apple-darwin23.5.0]
+        ignore line: [Thread model: posix]
+        ignore line: [InstalledDir: /Library/Developer/CommandLineTools/usr/bin]
+        link line: [ "/Library/Developer/CommandLineTools/usr/bin/ld" -demangle -lto_library /Library/Developer/CommandLineTools/usr/lib/libLTO.dylib -dynamic -arch arm64 -platform_version macos 14.5.0 15.1 -syslibroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.1.sdk -mllvm -enable-linkonceodr-outlining -o cmTC_54098 -L/opt/homebrew/opt/mysql-client/lib -L/opt/homebrew/opt/zstd/lib -search_paths_first -headerpad_max_install_names -v CMakeFiles/cmTC_54098.dir/CMakeCCompilerABI.c.o -lSystem /Library/Developer/CommandLineTools/usr/lib/clang/16/lib/darwin/libclang_rt.osx.a]
+          arg [/Library/Developer/CommandLineTools/usr/bin/ld] ==> ignore
+          arg [-demangle] ==> ignore
+          arg [-lto_library] ==> ignore, skip following value
+          arg [/Library/Developer/CommandLineTools/usr/lib/libLTO.dylib] ==> skip value of -lto_library
+          arg [-dynamic] ==> ignore
+          arg [-arch] ==> ignore
+          arg [arm64] ==> ignore
+          arg [-platform_version] ==> ignore
+          arg [macos] ==> ignore
+          arg [14.5.0] ==> ignore
+          arg [15.1] ==> ignore
+          arg [-syslibroot] ==> ignore
+          arg [/Library/Developer/CommandLineTools/SDKs/MacOSX15.1.sdk] ==> ignore
+          arg [-mllvm] ==> ignore
+          arg [-enable-linkonceodr-outlining] ==> ignore
+          arg [-o] ==> ignore
+          arg [cmTC_54098] ==> ignore
+          arg [-L/opt/homebrew/opt/mysql-client/lib] ==> dir [/opt/homebrew/opt/mysql-client/lib]
+          arg [-L/opt/homebrew/opt/zstd/lib] ==> dir [/opt/homebrew/opt/zstd/lib]
+          arg [-search_paths_first] ==> ignore
+          arg [-headerpad_max_install_names] ==> ignore
+          arg [-v] ==> ignore
+          arg [CMakeFiles/cmTC_54098.dir/CMakeCCompilerABI.c.o] ==> ignore
+          arg [-lSystem] ==> lib [System]
+          arg [/Library/Developer/CommandLineTools/usr/lib/clang/16/lib/darwin/libclang_rt.osx.a] ==> lib [/Library/Developer/CommandLineTools/usr/lib/clang/16/lib/darwin/libclang_rt.osx.a]
+        linker tool for 'C': /Library/Developer/CommandLineTools/usr/bin/ld
+        Library search paths: [;/opt/homebrew/opt/mysql-client/lib;/opt/homebrew/opt/zstd/lib;/Library/Developer/CommandLineTools/SDKs/MacOSX15.1.sdk/usr/lib;/Library/Developer/CommandLineTools/SDKs/MacOSX15.1.sdk/usr/lib/swift]
+        Framework search paths: [;/Library/Developer/CommandLineTools/SDKs/MacOSX15.1.sdk/System/Library/Frameworks]
+        remove lib [System]
+        remove lib [/Library/Developer/CommandLineTools/usr/lib/clang/16/lib/darwin/libclang_rt.osx.a]
+        collapse library dir [/opt/homebrew/opt/mysql-client/lib] ==> [/opt/homebrew/opt/mysql-client/lib]
+        collapse library dir [/opt/homebrew/opt/zstd/lib] ==> [/opt/homebrew/opt/zstd/lib]
+        collapse library dir [/opt/homebrew/opt/mysql-client/lib] ==> [/opt/homebrew/opt/mysql-client/lib]
+        collapse library dir [/opt/homebrew/opt/zstd/lib] ==> [/opt/homebrew/opt/zstd/lib]
+        collapse library dir [/Library/Developer/CommandLineTools/SDKs/MacOSX15.1.sdk/usr/lib] ==> [/Library/Developer/CommandLineTools/SDKs/MacOSX15.1.sdk/usr/lib]
+        collapse library dir [/Library/Developer/CommandLineTools/SDKs/MacOSX15.1.sdk/usr/lib/swift] ==> [/Library/Developer/CommandLineTools/SDKs/MacOSX15.1.sdk/usr/lib/swift]
+        collapse framework dir [/Library/Developer/CommandLineTools/SDKs/MacOSX15.1.sdk/System/Library/Frameworks] ==> [/Library/Developer/CommandLineTools/SDKs/MacOSX15.1.sdk/System/Library/Frameworks]
+        implicit libs: []
+        implicit objs: []
+        implicit dirs: [/opt/homebrew/opt/mysql-client/lib;/opt/homebrew/opt/zstd/lib;/Library/Developer/CommandLineTools/SDKs/MacOSX15.1.sdk/usr/lib;/Library/Developer/CommandLineTools/SDKs/MacOSX15.1.sdk/usr/lib/swift]
+        implicit fwks: [/Library/Developer/CommandLineTools/SDKs/MacOSX15.1.sdk/System/Library/Frameworks]
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/opt/homebrew/share/cmake/Modules/Internal/CMakeDetermineLinkerId.cmake:40 (message)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:255 (cmake_determine_linker_id)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:9 (project)"
+    message: |
+      Running the C compiler's linker: "/Library/Developer/CommandLineTools/usr/bin/ld" "-v"
+      @(#)PROGRAM:ld PROJECT:ld-1115.7.3
+      BUILD 07:38:57 Oct  4 2024
+      configured to support archs: armv6 armv7 armv7s arm64 arm64e arm64_32 i386 x86_64 x86_64h armv6m armv7k armv7m armv7em
+      will use ld-classic for: armv6 armv7 armv7s i386 armv6m armv7k armv7m armv7em
+      LTO support using: LLVM version 16.0.0 (static support for 29, runtime is 29)
+      TAPI support using: Apple TAPI version 16.0.0 (tapi-1600.0.11.8)
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/opt/homebrew/share/cmake/Modules/Internal/CheckSourceCompiles.cmake:108 (try_compile)"
+      - "/opt/homebrew/share/cmake/Modules/CheckCSourceCompiles.cmake:58 (cmake_check_source_compiles)"
+      - "/opt/homebrew/share/cmake/Modules/FindThreads.cmake:97 (CHECK_C_SOURCE_COMPILES)"
+      - "/opt/homebrew/share/cmake/Modules/FindThreads.cmake:163 (_threads_check_libc)"
+      - "build-support/macros-and-definitions.cmake:620 (find_package)"
+      - "CMakeLists.txt:149 (process_options)"
+    directories:
+      source: "/Users/tanishksingh/ns-allinone-3.42/ns-3.42/cmake-cache/CMakeFiles/CMakeScratch/TryCompile-VMqIpE"
+      binary: "/Users/tanishksingh/ns-allinone-3.42/ns-3.42/cmake-cache/CMakeFiles/CMakeScratch/TryCompile-VMqIpE"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: "-L/opt/homebrew/opt/mysql-client/lib -L/opt/homebrew/opt/zstd/lib"
+      CMAKE_MODULE_PATH: "/Users/tanishksingh/ns-allinone-3.42/ns-3.42/build-support/custom-modules;/Users/tanishksingh/ns-allinone-3.42/ns-3.42/build-support/3rd-party"
+      CMAKE_OSX_ARCHITECTURES: ""
+      CMAKE_OSX_DEPLOYMENT_TARGET: "14.5"
+      CMAKE_OSX_SYSROOT: "/Library/Developer/CommandLineTools/SDKs/MacOSX15.1.sdk"
+      CMAKE_POSITION_INDEPENDENT_CODE: "ON"
+    buildResult:
+      variable: "CMAKE_HAVE_LIBC_PTHREAD"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/tanishksingh/ns-allinone-3.42/ns-3.42/cmake-cache/CMakeFiles/CMakeScratch/TryCompile-VMqIpE'
+        
+        Run Build Command(s): /opt/homebrew/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_42f65/fast
+        /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_42f65.dir/build.make CMakeFiles/cmTC_42f65.dir/build
+        Building C object CMakeFiles/cmTC_42f65.dir/src.c.o
+        /Library/Developer/CommandLineTools/usr/bin/cc -DCMAKE_HAVE_LIBC_PTHREAD  -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.1.sdk -mmacosx-version-min=14.5 -fPIE -MD -MT CMakeFiles/cmTC_42f65.dir/src.c.o -MF CMakeFiles/cmTC_42f65.dir/src.c.o.d -o CMakeFiles/cmTC_42f65.dir/src.c.o -c /Users/tanishksingh/ns-allinone-3.42/ns-3.42/cmake-cache/CMakeFiles/CMakeScratch/TryCompile-VMqIpE/src.c
+        Linking C executable cmTC_42f65
+        /opt/homebrew/bin/cmake -E cmake_link_script CMakeFiles/cmTC_42f65.dir/link.txt --verbose=1
+        /Library/Developer/CommandLineTools/usr/bin/cc  -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.1.sdk -mmacosx-version-min=14.5 -Wl,-search_paths_first -Wl,-headerpad_max_install_names -L/opt/homebrew/opt/mysql-client/lib -L/opt/homebrew/opt/zstd/lib  CMakeFiles/cmTC_42f65.dir/src.c.o -o cmTC_42f65
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/opt/homebrew/share/cmake/Modules/Internal/CheckSourceCompiles.cmake:108 (try_compile)"
+      - "/opt/homebrew/share/cmake/Modules/CheckCXXSourceCompiles.cmake:58 (cmake_check_source_compiles)"
+      - "build-support/macros-and-definitions.cmake:1066 (check_cxx_source_compiles)"
+      - "CMakeLists.txt:149 (process_options)"
+    checks:
+      - "Performing Test HAVE_UINT128_T"
+    directories:
+      source: "/Users/tanishksingh/ns-allinone-3.42/ns-3.42/cmake-cache/CMakeFiles/CMakeScratch/TryCompile-Ive5uv"
+      binary: "/Users/tanishksingh/ns-allinone-3.42/ns-3.42/cmake-cache/CMakeFiles/CMakeScratch/TryCompile-Ive5uv"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: "-L/opt/homebrew/opt/mysql-client/lib -L/opt/homebrew/opt/zstd/lib"
+      CMAKE_MODULE_PATH: "/Users/tanishksingh/ns-allinone-3.42/ns-3.42/build-support/custom-modules;/Users/tanishksingh/ns-allinone-3.42/ns-3.42/build-support/3rd-party"
+      CMAKE_OSX_ARCHITECTURES: ""
+      CMAKE_OSX_DEPLOYMENT_TARGET: "14.5"
+      CMAKE_OSX_SYSROOT: "/Library/Developer/CommandLineTools/SDKs/MacOSX15.1.sdk"
+      CMAKE_POSITION_INDEPENDENT_CODE: "ON"
+    buildResult:
+      variable: "HAVE_UINT128_T"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/tanishksingh/ns-allinone-3.42/ns-3.42/cmake-cache/CMakeFiles/CMakeScratch/TryCompile-Ive5uv'
+        
+        Run Build Command(s): /opt/homebrew/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_fda60/fast
+        /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_fda60.dir/build.make CMakeFiles/cmTC_fda60.dir/build
+        Building CXX object CMakeFiles/cmTC_fda60.dir/src.cxx.o
+        /Library/Developer/CommandLineTools/usr/bin/c++ -DHAVE_UINT128_T  -std=c++20 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.1.sdk -mmacosx-version-min=14.5 -fPIE -MD -MT CMakeFiles/cmTC_fda60.dir/src.cxx.o -MF CMakeFiles/cmTC_fda60.dir/src.cxx.o.d -o CMakeFiles/cmTC_fda60.dir/src.cxx.o -c /Users/tanishksingh/ns-allinone-3.42/ns-3.42/cmake-cache/CMakeFiles/CMakeScratch/TryCompile-Ive5uv/src.cxx
+        /Users/tanishksingh/ns-allinone-3.42/ns-3.42/cmake-cache/CMakeFiles/CMakeScratch/TryCompile-Ive5uv/src.cxx:4:18: error: use of undeclared identifier 'uint128_t'
+            4 |             if ((uint128_t *) 0) return 0;
+              |                  ^
+        /Users/tanishksingh/ns-allinone-3.42/ns-3.42/cmake-cache/CMakeFiles/CMakeScratch/TryCompile-Ive5uv/src.cxx:4:29: error: expected expression
+            4 |             if ((uint128_t *) 0) return 0;
+              |                             ^
+        /Users/tanishksingh/ns-allinone-3.42/ns-3.42/cmake-cache/CMakeFiles/CMakeScratch/TryCompile-Ive5uv/src.cxx:5:25: error: use of undeclared identifier 'uint128_t'
+            5 |             if (sizeof (uint128_t)) return 0;
+              |                         ^
+        3 errors generated.
+        make[1]: *** [CMakeFiles/cmTC_fda60.dir/src.cxx.o] Error 1
+        make: *** [cmTC_fda60/fast] Error 2
+        
+      exitCode: 2
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/opt/homebrew/share/cmake/Modules/Internal/CheckSourceCompiles.cmake:108 (try_compile)"
+      - "/opt/homebrew/share/cmake/Modules/CheckCXXSourceCompiles.cmake:58 (cmake_check_source_compiles)"
+      - "build-support/macros-and-definitions.cmake:1076 (check_cxx_source_compiles)"
+      - "CMakeLists.txt:149 (process_options)"
+    checks:
+      - "Performing Test HAVE___UINT128_T"
+    directories:
+      source: "/Users/tanishksingh/ns-allinone-3.42/ns-3.42/cmake-cache/CMakeFiles/CMakeScratch/TryCompile-3OH6xf"
+      binary: "/Users/tanishksingh/ns-allinone-3.42/ns-3.42/cmake-cache/CMakeFiles/CMakeScratch/TryCompile-3OH6xf"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: "-L/opt/homebrew/opt/mysql-client/lib -L/opt/homebrew/opt/zstd/lib"
+      CMAKE_MODULE_PATH: "/Users/tanishksingh/ns-allinone-3.42/ns-3.42/build-support/custom-modules;/Users/tanishksingh/ns-allinone-3.42/ns-3.42/build-support/3rd-party"
+      CMAKE_OSX_ARCHITECTURES: ""
+      CMAKE_OSX_DEPLOYMENT_TARGET: "14.5"
+      CMAKE_OSX_SYSROOT: "/Library/Developer/CommandLineTools/SDKs/MacOSX15.1.sdk"
+      CMAKE_POSITION_INDEPENDENT_CODE: "ON"
+    buildResult:
+      variable: "HAVE___UINT128_T"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/tanishksingh/ns-allinone-3.42/ns-3.42/cmake-cache/CMakeFiles/CMakeScratch/TryCompile-3OH6xf'
+        
+        Run Build Command(s): /opt/homebrew/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_bf91d/fast
+        /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_bf91d.dir/build.make CMakeFiles/cmTC_bf91d.dir/build
+        Building CXX object CMakeFiles/cmTC_bf91d.dir/src.cxx.o
+        /Library/Developer/CommandLineTools/usr/bin/c++ -DHAVE___UINT128_T  -std=c++20 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.1.sdk -mmacosx-version-min=14.5 -fPIE -MD -MT CMakeFiles/cmTC_bf91d.dir/src.cxx.o -MF CMakeFiles/cmTC_bf91d.dir/src.cxx.o.d -o CMakeFiles/cmTC_bf91d.dir/src.cxx.o -c /Users/tanishksingh/ns-allinone-3.42/ns-3.42/cmake-cache/CMakeFiles/CMakeScratch/TryCompile-3OH6xf/src.cxx
+        Linking CXX executable cmTC_bf91d
+        /opt/homebrew/bin/cmake -E cmake_link_script CMakeFiles/cmTC_bf91d.dir/link.txt --verbose=1
+        /Library/Developer/CommandLineTools/usr/bin/c++  -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.1.sdk -mmacosx-version-min=14.5 -Wl,-search_paths_first -Wl,-headerpad_max_install_names -L/opt/homebrew/opt/mysql-client/lib -L/opt/homebrew/opt/zstd/lib  CMakeFiles/cmTC_bf91d.dir/src.cxx.o -o cmTC_bf91d
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/opt/homebrew/share/cmake/Modules/CheckIncludeFile.cmake:99 (try_compile)"
+      - "build-support/macros-and-definitions.cmake:1122 (check_include_file)"
+      - "CMakeLists.txt:149 (process_options)"
+    checks:
+      - "Looking for stdint.h"
+    directories:
+      source: "/Users/tanishksingh/ns-allinone-3.42/ns-3.42/cmake-cache/CMakeFiles/CMakeScratch/TryCompile-uIf1yP"
+      binary: "/Users/tanishksingh/ns-allinone-3.42/ns-3.42/cmake-cache/CMakeFiles/CMakeScratch/TryCompile-uIf1yP"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: "-L/opt/homebrew/opt/mysql-client/lib -L/opt/homebrew/opt/zstd/lib"
+      CMAKE_MODULE_PATH: "/Users/tanishksingh/ns-allinone-3.42/ns-3.42/build-support/custom-modules;/Users/tanishksingh/ns-allinone-3.42/ns-3.42/build-support/3rd-party"
+      CMAKE_OSX_ARCHITECTURES: ""
+      CMAKE_OSX_DEPLOYMENT_TARGET: "14.5"
+      CMAKE_OSX_SYSROOT: "/Library/Developer/CommandLineTools/SDKs/MacOSX15.1.sdk"
+      CMAKE_POSITION_INDEPENDENT_CODE: "ON"
+    buildResult:
+      variable: "HAVE_STDINT_H"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/tanishksingh/ns-allinone-3.42/ns-3.42/cmake-cache/CMakeFiles/CMakeScratch/TryCompile-uIf1yP'
+        
+        Run Build Command(s): /opt/homebrew/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_48db7/fast
+        /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_48db7.dir/build.make CMakeFiles/cmTC_48db7.dir/build
+        Building C object CMakeFiles/cmTC_48db7.dir/CheckIncludeFile.c.o
+        /Library/Developer/CommandLineTools/usr/bin/cc   -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.1.sdk -mmacosx-version-min=14.5 -fPIE -MD -MT CMakeFiles/cmTC_48db7.dir/CheckIncludeFile.c.o -MF CMakeFiles/cmTC_48db7.dir/CheckIncludeFile.c.o.d -o CMakeFiles/cmTC_48db7.dir/CheckIncludeFile.c.o -c /Users/tanishksingh/ns-allinone-3.42/ns-3.42/cmake-cache/CMakeFiles/CMakeScratch/TryCompile-uIf1yP/CheckIncludeFile.c
+        Linking C executable cmTC_48db7
+        /opt/homebrew/bin/cmake -E cmake_link_script CMakeFiles/cmTC_48db7.dir/link.txt --verbose=1
+        /Library/Developer/CommandLineTools/usr/bin/cc  -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.1.sdk -mmacosx-version-min=14.5 -Wl,-search_paths_first -Wl,-headerpad_max_install_names -L/opt/homebrew/opt/mysql-client/lib -L/opt/homebrew/opt/zstd/lib  CMakeFiles/cmTC_48db7.dir/CheckIncludeFile.c.o -o cmTC_48db7
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/opt/homebrew/share/cmake/Modules/CheckIncludeFile.cmake:99 (try_compile)"
+      - "build-support/macros-and-definitions.cmake:1123 (check_include_file)"
+      - "CMakeLists.txt:149 (process_options)"
+    checks:
+      - "Looking for inttypes.h"
+    directories:
+      source: "/Users/tanishksingh/ns-allinone-3.42/ns-3.42/cmake-cache/CMakeFiles/CMakeScratch/TryCompile-4w4gLQ"
+      binary: "/Users/tanishksingh/ns-allinone-3.42/ns-3.42/cmake-cache/CMakeFiles/CMakeScratch/TryCompile-4w4gLQ"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: "-L/opt/homebrew/opt/mysql-client/lib -L/opt/homebrew/opt/zstd/lib"
+      CMAKE_MODULE_PATH: "/Users/tanishksingh/ns-allinone-3.42/ns-3.42/build-support/custom-modules;/Users/tanishksingh/ns-allinone-3.42/ns-3.42/build-support/3rd-party"
+      CMAKE_OSX_ARCHITECTURES: ""
+      CMAKE_OSX_DEPLOYMENT_TARGET: "14.5"
+      CMAKE_OSX_SYSROOT: "/Library/Developer/CommandLineTools/SDKs/MacOSX15.1.sdk"
+      CMAKE_POSITION_INDEPENDENT_CODE: "ON"
+    buildResult:
+      variable: "HAVE_INTTYPES_H"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/tanishksingh/ns-allinone-3.42/ns-3.42/cmake-cache/CMakeFiles/CMakeScratch/TryCompile-4w4gLQ'
+        
+        Run Build Command(s): /opt/homebrew/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_254bb/fast
+        /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_254bb.dir/build.make CMakeFiles/cmTC_254bb.dir/build
+        Building C object CMakeFiles/cmTC_254bb.dir/CheckIncludeFile.c.o
+        /Library/Developer/CommandLineTools/usr/bin/cc   -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.1.sdk -mmacosx-version-min=14.5 -fPIE -MD -MT CMakeFiles/cmTC_254bb.dir/CheckIncludeFile.c.o -MF CMakeFiles/cmTC_254bb.dir/CheckIncludeFile.c.o.d -o CMakeFiles/cmTC_254bb.dir/CheckIncludeFile.c.o -c /Users/tanishksingh/ns-allinone-3.42/ns-3.42/cmake-cache/CMakeFiles/CMakeScratch/TryCompile-4w4gLQ/CheckIncludeFile.c
+        Linking C executable cmTC_254bb
+        /opt/homebrew/bin/cmake -E cmake_link_script CMakeFiles/cmTC_254bb.dir/link.txt --verbose=1
+        /Library/Developer/CommandLineTools/usr/bin/cc  -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.1.sdk -mmacosx-version-min=14.5 -Wl,-search_paths_first -Wl,-headerpad_max_install_names -L/opt/homebrew/opt/mysql-client/lib -L/opt/homebrew/opt/zstd/lib  CMakeFiles/cmTC_254bb.dir/CheckIncludeFile.c.o -o cmTC_254bb
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/opt/homebrew/share/cmake/Modules/CheckIncludeFile.cmake:99 (try_compile)"
+      - "build-support/macros-and-definitions.cmake:1124 (check_include_file)"
+      - "CMakeLists.txt:149 (process_options)"
+    checks:
+      - "Looking for sys/types.h"
+    directories:
+      source: "/Users/tanishksingh/ns-allinone-3.42/ns-3.42/cmake-cache/CMakeFiles/CMakeScratch/TryCompile-LrAuOH"
+      binary: "/Users/tanishksingh/ns-allinone-3.42/ns-3.42/cmake-cache/CMakeFiles/CMakeScratch/TryCompile-LrAuOH"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: "-L/opt/homebrew/opt/mysql-client/lib -L/opt/homebrew/opt/zstd/lib"
+      CMAKE_MODULE_PATH: "/Users/tanishksingh/ns-allinone-3.42/ns-3.42/build-support/custom-modules;/Users/tanishksingh/ns-allinone-3.42/ns-3.42/build-support/3rd-party"
+      CMAKE_OSX_ARCHITECTURES: ""
+      CMAKE_OSX_DEPLOYMENT_TARGET: "14.5"
+      CMAKE_OSX_SYSROOT: "/Library/Developer/CommandLineTools/SDKs/MacOSX15.1.sdk"
+      CMAKE_POSITION_INDEPENDENT_CODE: "ON"
+    buildResult:
+      variable: "HAVE_SYS_TYPES_H"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/tanishksingh/ns-allinone-3.42/ns-3.42/cmake-cache/CMakeFiles/CMakeScratch/TryCompile-LrAuOH'
+        
+        Run Build Command(s): /opt/homebrew/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_4c2ae/fast
+        /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_4c2ae.dir/build.make CMakeFiles/cmTC_4c2ae.dir/build
+        Building C object CMakeFiles/cmTC_4c2ae.dir/CheckIncludeFile.c.o
+        /Library/Developer/CommandLineTools/usr/bin/cc   -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.1.sdk -mmacosx-version-min=14.5 -fPIE -MD -MT CMakeFiles/cmTC_4c2ae.dir/CheckIncludeFile.c.o -MF CMakeFiles/cmTC_4c2ae.dir/CheckIncludeFile.c.o.d -o CMakeFiles/cmTC_4c2ae.dir/CheckIncludeFile.c.o -c /Users/tanishksingh/ns-allinone-3.42/ns-3.42/cmake-cache/CMakeFiles/CMakeScratch/TryCompile-LrAuOH/CheckIncludeFile.c
+        Linking C executable cmTC_4c2ae
+        /opt/homebrew/bin/cmake -E cmake_link_script CMakeFiles/cmTC_4c2ae.dir/link.txt --verbose=1
+        /Library/Developer/CommandLineTools/usr/bin/cc  -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.1.sdk -mmacosx-version-min=14.5 -Wl,-search_paths_first -Wl,-headerpad_max_install_names -L/opt/homebrew/opt/mysql-client/lib -L/opt/homebrew/opt/zstd/lib  CMakeFiles/cmTC_4c2ae.dir/CheckIncludeFile.c.o -o cmTC_4c2ae
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/opt/homebrew/share/cmake/Modules/CheckIncludeFile.cmake:99 (try_compile)"
+      - "build-support/macros-and-definitions.cmake:1125 (check_include_file)"
+      - "CMakeLists.txt:149 (process_options)"
+    checks:
+      - "Looking for sys/stat.h"
+    directories:
+      source: "/Users/tanishksingh/ns-allinone-3.42/ns-3.42/cmake-cache/CMakeFiles/CMakeScratch/TryCompile-xIQp0Y"
+      binary: "/Users/tanishksingh/ns-allinone-3.42/ns-3.42/cmake-cache/CMakeFiles/CMakeScratch/TryCompile-xIQp0Y"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: "-L/opt/homebrew/opt/mysql-client/lib -L/opt/homebrew/opt/zstd/lib"
+      CMAKE_MODULE_PATH: "/Users/tanishksingh/ns-allinone-3.42/ns-3.42/build-support/custom-modules;/Users/tanishksingh/ns-allinone-3.42/ns-3.42/build-support/3rd-party"
+      CMAKE_OSX_ARCHITECTURES: ""
+      CMAKE_OSX_DEPLOYMENT_TARGET: "14.5"
+      CMAKE_OSX_SYSROOT: "/Library/Developer/CommandLineTools/SDKs/MacOSX15.1.sdk"
+      CMAKE_POSITION_INDEPENDENT_CODE: "ON"
+    buildResult:
+      variable: "HAVE_SYS_STAT_H"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/tanishksingh/ns-allinone-3.42/ns-3.42/cmake-cache/CMakeFiles/CMakeScratch/TryCompile-xIQp0Y'
+        
+        Run Build Command(s): /opt/homebrew/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_a0f7d/fast
+        /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_a0f7d.dir/build.make CMakeFiles/cmTC_a0f7d.dir/build
+        Building C object CMakeFiles/cmTC_a0f7d.dir/CheckIncludeFile.c.o
+        /Library/Developer/CommandLineTools/usr/bin/cc   -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.1.sdk -mmacosx-version-min=14.5 -fPIE -MD -MT CMakeFiles/cmTC_a0f7d.dir/CheckIncludeFile.c.o -MF CMakeFiles/cmTC_a0f7d.dir/CheckIncludeFile.c.o.d -o CMakeFiles/cmTC_a0f7d.dir/CheckIncludeFile.c.o -c /Users/tanishksingh/ns-allinone-3.42/ns-3.42/cmake-cache/CMakeFiles/CMakeScratch/TryCompile-xIQp0Y/CheckIncludeFile.c
+        Linking C executable cmTC_a0f7d
+        /opt/homebrew/bin/cmake -E cmake_link_script CMakeFiles/cmTC_a0f7d.dir/link.txt --verbose=1
+        /Library/Developer/CommandLineTools/usr/bin/cc  -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.1.sdk -mmacosx-version-min=14.5 -Wl,-search_paths_first -Wl,-headerpad_max_install_names -L/opt/homebrew/opt/mysql-client/lib -L/opt/homebrew/opt/zstd/lib  CMakeFiles/cmTC_a0f7d.dir/CheckIncludeFile.c.o -o cmTC_a0f7d
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/opt/homebrew/share/cmake/Modules/CheckIncludeFile.cmake:99 (try_compile)"
+      - "build-support/macros-and-definitions.cmake:1126 (check_include_file)"
+      - "CMakeLists.txt:149 (process_options)"
+    checks:
+      - "Looking for dirent.h"
+    directories:
+      source: "/Users/tanishksingh/ns-allinone-3.42/ns-3.42/cmake-cache/CMakeFiles/CMakeScratch/TryCompile-BuWtX4"
+      binary: "/Users/tanishksingh/ns-allinone-3.42/ns-3.42/cmake-cache/CMakeFiles/CMakeScratch/TryCompile-BuWtX4"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: "-L/opt/homebrew/opt/mysql-client/lib -L/opt/homebrew/opt/zstd/lib"
+      CMAKE_MODULE_PATH: "/Users/tanishksingh/ns-allinone-3.42/ns-3.42/build-support/custom-modules;/Users/tanishksingh/ns-allinone-3.42/ns-3.42/build-support/3rd-party"
+      CMAKE_OSX_ARCHITECTURES: ""
+      CMAKE_OSX_DEPLOYMENT_TARGET: "14.5"
+      CMAKE_OSX_SYSROOT: "/Library/Developer/CommandLineTools/SDKs/MacOSX15.1.sdk"
+      CMAKE_POSITION_INDEPENDENT_CODE: "ON"
+    buildResult:
+      variable: "HAVE_DIRENT_H"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/tanishksingh/ns-allinone-3.42/ns-3.42/cmake-cache/CMakeFiles/CMakeScratch/TryCompile-BuWtX4'
+        
+        Run Build Command(s): /opt/homebrew/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_3cac3/fast
+        /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_3cac3.dir/build.make CMakeFiles/cmTC_3cac3.dir/build
+        Building C object CMakeFiles/cmTC_3cac3.dir/CheckIncludeFile.c.o
+        /Library/Developer/CommandLineTools/usr/bin/cc   -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.1.sdk -mmacosx-version-min=14.5 -fPIE -MD -MT CMakeFiles/cmTC_3cac3.dir/CheckIncludeFile.c.o -MF CMakeFiles/cmTC_3cac3.dir/CheckIncludeFile.c.o.d -o CMakeFiles/cmTC_3cac3.dir/CheckIncludeFile.c.o -c /Users/tanishksingh/ns-allinone-3.42/ns-3.42/cmake-cache/CMakeFiles/CMakeScratch/TryCompile-BuWtX4/CheckIncludeFile.c
+        Linking C executable cmTC_3cac3
+        /opt/homebrew/bin/cmake -E cmake_link_script CMakeFiles/cmTC_3cac3.dir/link.txt --verbose=1
+        /Library/Developer/CommandLineTools/usr/bin/cc  -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.1.sdk -mmacosx-version-min=14.5 -Wl,-search_paths_first -Wl,-headerpad_max_install_names -L/opt/homebrew/opt/mysql-client/lib -L/opt/homebrew/opt/zstd/lib  CMakeFiles/cmTC_3cac3.dir/CheckIncludeFile.c.o -o cmTC_3cac3
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/opt/homebrew/share/cmake/Modules/CheckIncludeFile.cmake:99 (try_compile)"
+      - "build-support/macros-and-definitions.cmake:1127 (check_include_file)"
+      - "CMakeLists.txt:149 (process_options)"
+    checks:
+      - "Looking for stdlib.h"
+    directories:
+      source: "/Users/tanishksingh/ns-allinone-3.42/ns-3.42/cmake-cache/CMakeFiles/CMakeScratch/TryCompile-0X9wY6"
+      binary: "/Users/tanishksingh/ns-allinone-3.42/ns-3.42/cmake-cache/CMakeFiles/CMakeScratch/TryCompile-0X9wY6"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: "-L/opt/homebrew/opt/mysql-client/lib -L/opt/homebrew/opt/zstd/lib"
+      CMAKE_MODULE_PATH: "/Users/tanishksingh/ns-allinone-3.42/ns-3.42/build-support/custom-modules;/Users/tanishksingh/ns-allinone-3.42/ns-3.42/build-support/3rd-party"
+      CMAKE_OSX_ARCHITECTURES: ""
+      CMAKE_OSX_DEPLOYMENT_TARGET: "14.5"
+      CMAKE_OSX_SYSROOT: "/Library/Developer/CommandLineTools/SDKs/MacOSX15.1.sdk"
+      CMAKE_POSITION_INDEPENDENT_CODE: "ON"
+    buildResult:
+      variable: "HAVE_STDLIB_H"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/tanishksingh/ns-allinone-3.42/ns-3.42/cmake-cache/CMakeFiles/CMakeScratch/TryCompile-0X9wY6'
+        
+        Run Build Command(s): /opt/homebrew/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_8f739/fast
+        /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_8f739.dir/build.make CMakeFiles/cmTC_8f739.dir/build
+        Building C object CMakeFiles/cmTC_8f739.dir/CheckIncludeFile.c.o
+        /Library/Developer/CommandLineTools/usr/bin/cc   -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.1.sdk -mmacosx-version-min=14.5 -fPIE -MD -MT CMakeFiles/cmTC_8f739.dir/CheckIncludeFile.c.o -MF CMakeFiles/cmTC_8f739.dir/CheckIncludeFile.c.o.d -o CMakeFiles/cmTC_8f739.dir/CheckIncludeFile.c.o -c /Users/tanishksingh/ns-allinone-3.42/ns-3.42/cmake-cache/CMakeFiles/CMakeScratch/TryCompile-0X9wY6/CheckIncludeFile.c
+        Linking C executable cmTC_8f739
+        /opt/homebrew/bin/cmake -E cmake_link_script CMakeFiles/cmTC_8f739.dir/link.txt --verbose=1
+        /Library/Developer/CommandLineTools/usr/bin/cc  -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.1.sdk -mmacosx-version-min=14.5 -Wl,-search_paths_first -Wl,-headerpad_max_install_names -L/opt/homebrew/opt/mysql-client/lib -L/opt/homebrew/opt/zstd/lib  CMakeFiles/cmTC_8f739.dir/CheckIncludeFile.c.o -o cmTC_8f739
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/opt/homebrew/share/cmake/Modules/CheckIncludeFile.cmake:99 (try_compile)"
+      - "build-support/macros-and-definitions.cmake:1128 (check_include_file)"
+      - "CMakeLists.txt:149 (process_options)"
+    checks:
+      - "Looking for signal.h"
+    directories:
+      source: "/Users/tanishksingh/ns-allinone-3.42/ns-3.42/cmake-cache/CMakeFiles/CMakeScratch/TryCompile-khfk3e"
+      binary: "/Users/tanishksingh/ns-allinone-3.42/ns-3.42/cmake-cache/CMakeFiles/CMakeScratch/TryCompile-khfk3e"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: "-L/opt/homebrew/opt/mysql-client/lib -L/opt/homebrew/opt/zstd/lib"
+      CMAKE_MODULE_PATH: "/Users/tanishksingh/ns-allinone-3.42/ns-3.42/build-support/custom-modules;/Users/tanishksingh/ns-allinone-3.42/ns-3.42/build-support/3rd-party"
+      CMAKE_OSX_ARCHITECTURES: ""
+      CMAKE_OSX_DEPLOYMENT_TARGET: "14.5"
+      CMAKE_OSX_SYSROOT: "/Library/Developer/CommandLineTools/SDKs/MacOSX15.1.sdk"
+      CMAKE_POSITION_INDEPENDENT_CODE: "ON"
+    buildResult:
+      variable: "HAVE_SIGNAL_H"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/tanishksingh/ns-allinone-3.42/ns-3.42/cmake-cache/CMakeFiles/CMakeScratch/TryCompile-khfk3e'
+        
+        Run Build Command(s): /opt/homebrew/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_c8a58/fast
+        /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_c8a58.dir/build.make CMakeFiles/cmTC_c8a58.dir/build
+        Building C object CMakeFiles/cmTC_c8a58.dir/CheckIncludeFile.c.o
+        /Library/Developer/CommandLineTools/usr/bin/cc   -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.1.sdk -mmacosx-version-min=14.5 -fPIE -MD -MT CMakeFiles/cmTC_c8a58.dir/CheckIncludeFile.c.o -MF CMakeFiles/cmTC_c8a58.dir/CheckIncludeFile.c.o.d -o CMakeFiles/cmTC_c8a58.dir/CheckIncludeFile.c.o -c /Users/tanishksingh/ns-allinone-3.42/ns-3.42/cmake-cache/CMakeFiles/CMakeScratch/TryCompile-khfk3e/CheckIncludeFile.c
+        Linking C executable cmTC_c8a58
+        /opt/homebrew/bin/cmake -E cmake_link_script CMakeFiles/cmTC_c8a58.dir/link.txt --verbose=1
+        /Library/Developer/CommandLineTools/usr/bin/cc  -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.1.sdk -mmacosx-version-min=14.5 -Wl,-search_paths_first -Wl,-headerpad_max_install_names -L/opt/homebrew/opt/mysql-client/lib -L/opt/homebrew/opt/zstd/lib  CMakeFiles/cmTC_c8a58.dir/CheckIncludeFile.c.o -o cmTC_c8a58
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/opt/homebrew/share/cmake/Modules/CheckIncludeFile.cmake:99 (try_compile)"
+      - "build-support/macros-and-definitions.cmake:1129 (check_include_file)"
+      - "CMakeLists.txt:149 (process_options)"
+    checks:
+      - "Looking for netpacket/packet.h"
+    directories:
+      source: "/Users/tanishksingh/ns-allinone-3.42/ns-3.42/cmake-cache/CMakeFiles/CMakeScratch/TryCompile-yT72RS"
+      binary: "/Users/tanishksingh/ns-allinone-3.42/ns-3.42/cmake-cache/CMakeFiles/CMakeScratch/TryCompile-yT72RS"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: "-L/opt/homebrew/opt/mysql-client/lib -L/opt/homebrew/opt/zstd/lib"
+      CMAKE_MODULE_PATH: "/Users/tanishksingh/ns-allinone-3.42/ns-3.42/build-support/custom-modules;/Users/tanishksingh/ns-allinone-3.42/ns-3.42/build-support/3rd-party"
+      CMAKE_OSX_ARCHITECTURES: ""
+      CMAKE_OSX_DEPLOYMENT_TARGET: "14.5"
+      CMAKE_OSX_SYSROOT: "/Library/Developer/CommandLineTools/SDKs/MacOSX15.1.sdk"
+      CMAKE_POSITION_INDEPENDENT_CODE: "ON"
+    buildResult:
+      variable: "HAVE_PACKETH"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/tanishksingh/ns-allinone-3.42/ns-3.42/cmake-cache/CMakeFiles/CMakeScratch/TryCompile-yT72RS'
+        
+        Run Build Command(s): /opt/homebrew/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_4e37f/fast
+        /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_4e37f.dir/build.make CMakeFiles/cmTC_4e37f.dir/build
+        Building C object CMakeFiles/cmTC_4e37f.dir/CheckIncludeFile.c.o
+        /Library/Developer/CommandLineTools/usr/bin/cc   -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.1.sdk -mmacosx-version-min=14.5 -fPIE -MD -MT CMakeFiles/cmTC_4e37f.dir/CheckIncludeFile.c.o -MF CMakeFiles/cmTC_4e37f.dir/CheckIncludeFile.c.o.d -o CMakeFiles/cmTC_4e37f.dir/CheckIncludeFile.c.o -c /Users/tanishksingh/ns-allinone-3.42/ns-3.42/cmake-cache/CMakeFiles/CMakeScratch/TryCompile-yT72RS/CheckIncludeFile.c
+        /Users/tanishksingh/ns-allinone-3.42/ns-3.42/cmake-cache/CMakeFiles/CMakeScratch/TryCompile-yT72RS/CheckIncludeFile.c:1:10: fatal error: 'netpacket/packet.h' file not found
+            1 | #include <netpacket/packet.h>
+              |          ^~~~~~~~~~~~~~~~~~~~
+        1 error generated.
+        make[1]: *** [CMakeFiles/cmTC_4e37f.dir/CheckIncludeFile.c.o] Error 1
+        make: *** [cmTC_4e37f/fast] Error 2
+        
+      exitCode: 2
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/opt/homebrew/share/cmake/Modules/CheckFunctionExists.cmake:93 (try_compile)"
+      - "build-support/macros-and-definitions.cmake:1130 (check_function_exists)"
+      - "CMakeLists.txt:149 (process_options)"
+    checks:
+      - "Looking for getenv"
+    directories:
+      source: "/Users/tanishksingh/ns-allinone-3.42/ns-3.42/cmake-cache/CMakeFiles/CMakeScratch/TryCompile-URclyr"
+      binary: "/Users/tanishksingh/ns-allinone-3.42/ns-3.42/cmake-cache/CMakeFiles/CMakeScratch/TryCompile-URclyr"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: "-L/opt/homebrew/opt/mysql-client/lib -L/opt/homebrew/opt/zstd/lib"
+      CMAKE_MODULE_PATH: "/Users/tanishksingh/ns-allinone-3.42/ns-3.42/build-support/custom-modules;/Users/tanishksingh/ns-allinone-3.42/ns-3.42/build-support/3rd-party"
+      CMAKE_OSX_ARCHITECTURES: ""
+      CMAKE_OSX_DEPLOYMENT_TARGET: "14.5"
+      CMAKE_OSX_SYSROOT: "/Library/Developer/CommandLineTools/SDKs/MacOSX15.1.sdk"
+      CMAKE_POSITION_INDEPENDENT_CODE: "ON"
+    buildResult:
+      variable: "HAVE_GETENV"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/tanishksingh/ns-allinone-3.42/ns-3.42/cmake-cache/CMakeFiles/CMakeScratch/TryCompile-URclyr'
+        
+        Run Build Command(s): /opt/homebrew/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_696cd/fast
+        /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_696cd.dir/build.make CMakeFiles/cmTC_696cd.dir/build
+        Building C object CMakeFiles/cmTC_696cd.dir/CheckFunctionExists.c.o
+        /Library/Developer/CommandLineTools/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=getenv -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.1.sdk -mmacosx-version-min=14.5 -fPIE -MD -MT CMakeFiles/cmTC_696cd.dir/CheckFunctionExists.c.o -MF CMakeFiles/cmTC_696cd.dir/CheckFunctionExists.c.o.d -o CMakeFiles/cmTC_696cd.dir/CheckFunctionExists.c.o -c /Users/tanishksingh/ns-allinone-3.42/ns-3.42/cmake-cache/CMakeFiles/CMakeScratch/TryCompile-URclyr/CheckFunctionExists.c
+        Linking C executable cmTC_696cd
+        /opt/homebrew/bin/cmake -E cmake_link_script CMakeFiles/cmTC_696cd.dir/link.txt --verbose=1
+        /Library/Developer/CommandLineTools/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=getenv -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.1.sdk -mmacosx-version-min=14.5 -Wl,-search_paths_first -Wl,-headerpad_max_install_names -L/opt/homebrew/opt/mysql-client/lib -L/opt/homebrew/opt/zstd/lib  CMakeFiles/cmTC_696cd.dir/CheckFunctionExists.c.o -o cmTC_696cd
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/opt/homebrew/share/cmake/Modules/Internal/CheckSourceCompiles.cmake:108 (try_compile)"
+      - "/opt/homebrew/share/cmake/Modules/CheckCXXSourceCompiles.cmake:58 (cmake_check_source_compiles)"
+      - "src/antenna/CMakeLists.txt:2 (check_cxx_source_compiles)"
+    checks:
+      - "Performing Test HAVE_STD_BESSEL_FUNC"
+    directories:
+      source: "/Users/tanishksingh/ns-allinone-3.42/ns-3.42/cmake-cache/CMakeFiles/CMakeScratch/TryCompile-j6JNQD"
+      binary: "/Users/tanishksingh/ns-allinone-3.42/ns-3.42/cmake-cache/CMakeFiles/CMakeScratch/TryCompile-j6JNQD"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: "-L/opt/homebrew/opt/mysql-client/lib -L/opt/homebrew/opt/zstd/lib"
+      CMAKE_MODULE_PATH: "/Users/tanishksingh/ns-allinone-3.42/ns-3.42/build-support/custom-modules;/Users/tanishksingh/ns-allinone-3.42/ns-3.42/build-support/3rd-party"
+      CMAKE_OSX_ARCHITECTURES: ""
+      CMAKE_OSX_DEPLOYMENT_TARGET: "14.5"
+      CMAKE_OSX_SYSROOT: "/Library/Developer/CommandLineTools/SDKs/MacOSX15.1.sdk"
+      CMAKE_POSITION_INDEPENDENT_CODE: "ON"
+    buildResult:
+      variable: "HAVE_STD_BESSEL_FUNC"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/tanishksingh/ns-allinone-3.42/ns-3.42/cmake-cache/CMakeFiles/CMakeScratch/TryCompile-j6JNQD'
+        
+        Run Build Command(s): /opt/homebrew/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_f9540/fast
+        /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_f9540.dir/build.make CMakeFiles/cmTC_f9540.dir/build
+        Building CXX object CMakeFiles/cmTC_f9540.dir/src.cxx.o
+        /Library/Developer/CommandLineTools/usr/bin/c++ -DHAVE_STD_BESSEL_FUNC  -std=c++20 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.1.sdk -mmacosx-version-min=14.5 -fPIE -MD -MT CMakeFiles/cmTC_f9540.dir/src.cxx.o -MF CMakeFiles/cmTC_f9540.dir/src.cxx.o.d -o CMakeFiles/cmTC_f9540.dir/src.cxx.o -c /Users/tanishksingh/ns-allinone-3.42/ns-3.42/cmake-cache/CMakeFiles/CMakeScratch/TryCompile-j6JNQD/src.cxx
+        /Users/tanishksingh/ns-allinone-3.42/ns-3.42/cmake-cache/CMakeFiles/CMakeScratch/TryCompile-j6JNQD/src.cxx:4:19: error: no member named 'cyl_bessel_j' in namespace 'std'
+            4 |       return std::cyl_bessel_j(1, 1);
+              |              ~~~~~^
+        1 error generated.
+        make[1]: *** [CMakeFiles/cmTC_f9540.dir/src.cxx.o] Error 1
+        make: *** [cmTC_f9540/fast] Error 2
+        
+      exitCode: 2
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/opt/homebrew/share/cmake/Modules/CheckIncludeFiles.cmake:141 (try_compile)"
+      - "src/antenna/CMakeLists.txt:27 (check_include_files)"
+    checks:
+      - "Looking for include file boost/math/special_functions/bessel.hpp"
+    directories:
+      source: "/Users/tanishksingh/ns-allinone-3.42/ns-3.42/cmake-cache/CMakeFiles/CMakeScratch/TryCompile-KUB9WZ"
+      binary: "/Users/tanishksingh/ns-allinone-3.42/ns-3.42/cmake-cache/CMakeFiles/CMakeScratch/TryCompile-KUB9WZ"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: "-L/opt/homebrew/opt/mysql-client/lib -L/opt/homebrew/opt/zstd/lib"
+      CMAKE_MODULE_PATH: "/Users/tanishksingh/ns-allinone-3.42/ns-3.42/build-support/custom-modules;/Users/tanishksingh/ns-allinone-3.42/ns-3.42/build-support/3rd-party"
+      CMAKE_OSX_ARCHITECTURES: ""
+      CMAKE_OSX_DEPLOYMENT_TARGET: "14.5"
+      CMAKE_OSX_SYSROOT: "/Library/Developer/CommandLineTools/SDKs/MacOSX15.1.sdk"
+      CMAKE_POSITION_INDEPENDENT_CODE: "ON"
+    buildResult:
+      variable: "HAVE_BOOST_BESSEL_FUNC"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/tanishksingh/ns-allinone-3.42/ns-3.42/cmake-cache/CMakeFiles/CMakeScratch/TryCompile-KUB9WZ'
+        
+        Run Build Command(s): /opt/homebrew/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_f164a/fast
+        /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_f164a.dir/build.make CMakeFiles/cmTC_f164a.dir/build
+        Building CXX object CMakeFiles/cmTC_f164a.dir/HAVE_BOOST_BESSEL_FUNC.cpp.o
+        /Library/Developer/CommandLineTools/usr/bin/c++   -std=c++20 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.1.sdk -mmacosx-version-min=14.5 -fPIE -MD -MT CMakeFiles/cmTC_f164a.dir/HAVE_BOOST_BESSEL_FUNC.cpp.o -MF CMakeFiles/cmTC_f164a.dir/HAVE_BOOST_BESSEL_FUNC.cpp.o.d -o CMakeFiles/cmTC_f164a.dir/HAVE_BOOST_BESSEL_FUNC.cpp.o -c /Users/tanishksingh/ns-allinone-3.42/ns-3.42/cmake-cache/CMakeFiles/CMakeScratch/TryCompile-KUB9WZ/HAVE_BOOST_BESSEL_FUNC.cpp
+        /Users/tanishksingh/ns-allinone-3.42/ns-3.42/cmake-cache/CMakeFiles/CMakeScratch/TryCompile-KUB9WZ/HAVE_BOOST_BESSEL_FUNC.cpp:2:10: fatal error: 'boost/math/special_functions/bessel.hpp' file not found
+            2 | #include <boost/math/special_functions/bessel.hpp>
+              |          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+        1 error generated.
+        make[1]: *** [CMakeFiles/cmTC_f164a.dir/HAVE_BOOST_BESSEL_FUNC.cpp.o] Error 1
+        make: *** [cmTC_f164a/fast] Error 2
+        
+      exitCode: 2
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/opt/homebrew/share/cmake/Modules/CheckIncludeFiles.cmake:141 (try_compile)"
+      - "src/core/CMakeLists.txt:17 (check_include_files)"
+    checks:
+      - "Looking for include files boost/units/quantity.hpp, boost/units/systems/si.hpp"
+    directories:
+      source: "/Users/tanishksingh/ns-allinone-3.42/ns-3.42/cmake-cache/CMakeFiles/CMakeScratch/TryCompile-p2afzP"
+      binary: "/Users/tanishksingh/ns-allinone-3.42/ns-3.42/cmake-cache/CMakeFiles/CMakeScratch/TryCompile-p2afzP"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: "-L/opt/homebrew/opt/mysql-client/lib -L/opt/homebrew/opt/zstd/lib"
+      CMAKE_MODULE_PATH: "/Users/tanishksingh/ns-allinone-3.42/ns-3.42/build-support/custom-modules;/Users/tanishksingh/ns-allinone-3.42/ns-3.42/build-support/3rd-party"
+      CMAKE_OSX_ARCHITECTURES: ""
+      CMAKE_OSX_DEPLOYMENT_TARGET: "14.5"
+      CMAKE_OSX_SYSROOT: "/Library/Developer/CommandLineTools/SDKs/MacOSX15.1.sdk"
+      CMAKE_POSITION_INDEPENDENT_CODE: "ON"
+    buildResult:
+      variable: "HAVE_BOOST_UNITS"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/tanishksingh/ns-allinone-3.42/ns-3.42/cmake-cache/CMakeFiles/CMakeScratch/TryCompile-p2afzP'
+        
+        Run Build Command(s): /opt/homebrew/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_c99d1/fast
+        /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_c99d1.dir/build.make CMakeFiles/cmTC_c99d1.dir/build
+        Building CXX object CMakeFiles/cmTC_c99d1.dir/HAVE_BOOST_UNITS.cpp.o
+        /Library/Developer/CommandLineTools/usr/bin/c++   -std=c++20 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.1.sdk -mmacosx-version-min=14.5 -fPIE -MD -MT CMakeFiles/cmTC_c99d1.dir/HAVE_BOOST_UNITS.cpp.o -MF CMakeFiles/cmTC_c99d1.dir/HAVE_BOOST_UNITS.cpp.o.d -o CMakeFiles/cmTC_c99d1.dir/HAVE_BOOST_UNITS.cpp.o -c /Users/tanishksingh/ns-allinone-3.42/ns-3.42/cmake-cache/CMakeFiles/CMakeScratch/TryCompile-p2afzP/HAVE_BOOST_UNITS.cpp
+        /Users/tanishksingh/ns-allinone-3.42/ns-3.42/cmake-cache/CMakeFiles/CMakeScratch/TryCompile-p2afzP/HAVE_BOOST_UNITS.cpp:2:10: fatal error: 'boost/units/quantity.hpp' file not found
+            2 | #include <boost/units/quantity.hpp>
+              |          ^~~~~~~~~~~~~~~~~~~~~~~~~~
+        1 error generated.
+        make[1]: *** [CMakeFiles/cmTC_c99d1.dir/HAVE_BOOST_UNITS.cpp.o] Error 1
+        make: *** [cmTC_c99d1/fast] Error 2
+        
+      exitCode: 2
+...

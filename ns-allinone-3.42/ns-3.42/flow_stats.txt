@@ -1,0 +1,13 @@
+Flow Statistics
+Flow 1 (10.1.1.1 -> 10.1.5.1)
+  Tx Packets: 116
+  Rx Packets: 116
+  Lost Packets: 0
+  Throughput: 0.00437054 Mbps
+  End-to-End Delay: 0.00833867 seconds
+Flow 2 (10.1.5.1 -> 10.1.1.1)
+  Tx Packets: 116
+  Rx Packets: 116
+  Lost Packets: 0
+  Throughput: 0.00437054 Mbps
+  End-to-End Delay: 0.00833867 seconds
